@@ -1,0 +1,347 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>topicBootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+ <body class>
+<nav class="navbar navbar-expand-sm top-fixed navbar-dark bg-dark">
+			<a href="homepage.html" class="navbar-brand">limeroad</a>
+	<button class="navbar-toggler" data-toggle="collapse"  data-target="#menu">
+		<span class="navbar-toggler-icon"></span>
+
+	</button>
+	
+	<div class="collapse navbar-collapse" id="menu"><!--collapse menu-->
+	<ul class="navbar-nav">
+	
+		<li class="navbar-item">
+			<a href="homepage.html" class="nav-link text-white">home</a>
+		</li>
+		<li class="navbar-item">
+			<a href="#" class="nav-link text-white">contact</a>
+		</li>
+		<li class="navbar-item">
+			<a href="#" class="nav-link text-white">about</a>
+		</li>
+		<li class="navbar-item">
+			<a href="#" class="nav-link text-white">serivices</a>
+		</li>
+	</ul>
+	</div><!--collapse -->
+</nav>
+	
+<div class="container">
+<script>
+ function fun()
+	{
+		var pincode = document.getElementById("pindcode").value;
+	  var number  = document.getElementById("number").value;
+		var city    = document.getElementById("city").value;
+		var state    = document.getElementById("state").value;
+		var address = document.getElementById("address").value;
+		var email   = document.getElementById("email").value;
+		if(pincode=="")
+		{
+				document.getElementById("pincode").innerHTML= "enter pincode";
+		}
+		
+			if(number=="")
+		{
+				document.getElementById("num").innerHTML= "enter number";
+		}
+		
+		
+			if(city=="")
+		{
+				document.getElementById("cty").innerHTML= "enter city";
+		}
+		
+				if(state=="")
+		{
+				document.getElementById("ste").innerHTML= "enter state";
+		}
+		
+						if(number=="")
+		{
+				document.getElementById("add").innerHTML= "enter ";
+		}
+		
+					if(email=="")
+		{
+				document.getElementById("emailadd").innerHTML= "enter e mail ";
+		}
+		
+		
+	}	
+	
+function cmp()
+	{
+		
+		var cmp = confirm("are you sure to order");
+	alert("click to home page");	
+	}	
+	
+	
+	
+	
+	
+</script>
+
+	<div class="row">
+		<div class="col-lg-6 col-md-12 col-sm-6">
+			<h3>please fill shipping address</h3>
+			<div class="form" name="forms">
+				<form>
+		<div class="row">
+		<div class="col-6">
+		<input type="text" id="pindcode"  class="form-control border border-top-0 border-right-0 border-left-0" 
+			placeholder="pincode*">
+		<span class="text-danger" id ="pincode"></span>
+			</div>
+		<div class="col-6">
+		
+		<input type="text" id="number"  class="form-control border border-top-0 border-right-0 border-left-0" 
+		placeholder=" +91 mobile number*">
+				<span class="text-danger" id ="num"></span>
+			
+				</div>
+					</div>
+					<br>
+					<br>
+					<div class="row">
+						<div class="col-6">
+							<input type="text" id="city" class="form-control border border-top-0 border-right-0 border-left-0" 
+							placeholder="city*">
+							<span class="text-danger" id ="cty"></span>
+						</div>
+						<div class="col-6">
+							<input type="text"  id="state" class="form-control border border-top-0 border-right-0 border-left-0" 
+							placeholder=" state*">
+						<span class="text-danger" id ="ste"></span>
+							
+						</div>
+						
+						
+					</div>
+					<br>
+					<br>
+						<div class="row">
+						<div class="col-12">
+							<input type="text" id="address" class="form-control border border-top-0 border-right-0 border-left-0" 
+							placeholder="Address*">
+								<span class="text-danger" id ="add"></span>
+						</div>
+						
+					</div>
+					<br><br>
+					
+						<div class="row">
+						<div class="col-6">
+							<input type="text" id="email" class="form-control border border-top-0 border-right-0 border-left-0" 
+							placeholder="email id*">
+								<span class="text-danger" id ="emailadd"></span>
+						</div>
+						<div class="col-6">
+							<input type="text"  class="form-control border border-top-0 border-right-0 border-left-0" 
+							placeholder=" fullname*">
+							
+						</div>
+						
+						
+					</div>
+	
+				</form>
+				<button type="button" class="btn btn-block btn-danger" onclick="fun()">save</button>
+			</div>
+		</div>
+		<div class="col-6 border">
+			<p class="bg-light border rounded">100%<b>cashback</b><br>	
+			you will get 100% cashback on successfully devlivery of this order</p>
+	  <div class="bil">
+	  	<h3>payment mode</h3>
+	  	<div class="row">
+	  		<div class="col-3">
+	  			<div class="nav flex-column nav-pills" id="tab" role="tablist">
+	  				<a href="#" class="nav-link" id="v-pill"
+	  				 data-toggle="pill" role="tab">ATM/DEBIT</a>
+	  				 <a href="#tab1" class="nav-link" id="v-pill"
+	  				 data-toggle="pill" role="tab">CREDIT</a>
+	  				
+	  				<a href="#tab2" class="nav-link" id="v-pill"
+	  				 data-toggle="pill" role="tab">NETBANKING</a>
+	  				
+	  				<a href="#tab3" class="nav-link" id="v-pill"
+	  				 data-toggle="pill" role="tab">PAYTM</a>
+	  				
+	  				<a href="#tab4" class="nav-link" id="v-pill"
+	  				 data-toggle="pill" role="tab">GOOGLE PAY</a>
+	  				 <a href="#tab5" class="nav-link" id="v-pill"
+	  				 data-toggle="pill" role="tab">PHONE PAY</a>
+	  				
+	  				
+	  				
+	  			</div>
+	  		</div>
+	  		<div class="col-lg-9 col-sm-12">
+	  		<div class="tab-content" id="tab-content">
+	  			<div class="tab-pane fade" id="tab1" role="tabpanel">
+	  				<div class="form">
+	  					<form class="form">
+	  						<div class="form-group">
+	  			      <input type="text" class="form-control  border border-right-0 border-top-0   " placeholder="card number*">
+	  			      
+	  						</div>
+	  						<div class="form-group">
+	  							<input type="text" class="form-control" placeholder="name of holder">
+	  						</div>
+	  						<div class="form-group">
+	  							<input  type="date"> <input type="text" placeholder="cvv">
+	  						</div>
+	  						<div class="form-group form-check">
+	  							<input type="checkbox" class="from-check-input bg-danger">
+	  							<span class="text-success">save this card</span>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>show order details<br>order total</label>
+	  							<p class="float-right text-danger">$2890</p>
+	  						</div>
+	  						<button id="btn" class=" btn btn-block BG-SUCCESS text-white" onclick="cmp()">CONFORM ORDER</button>
+	  					</form>
+	  				</div>
+	  			</div>
+	  			
+	  				<div class="tab-pane fade" id="tab2" role="tabpanel">
+	  		     	<div class="form col-">
+	  					<form class="form">
+	  						<div class="form-group">
+	  			      <input type="text" class="form-control  border border-right-0 border-top-0   " placeholder="card number*">
+	  			      
+	  						</div>
+	  						<div class="form-group">
+	  							<input type="text" class="form-control" placeholder="name of holder">
+	  						</div>
+	  						<div class="form-group">
+	  							<input  type="date"> <input type="text" placeholder="cvv">
+	  						</div>
+	  						<div class="form-group form-check">
+	  							<input type="checkbox" class="from-check-input bg-danger">
+	  							<span class="text-success">save this card</span>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>show order details<br>order total</label>
+	  							<p class="float-right text-danger">$2890</p>
+	  						</div>
+	  						<button class=" btn btn-block BG-SUCCESS text-white">CONFORM ORDER</button>
+	  					</form>
+	  				</div>
+	  			</div>
+	  			
+	  				<div class="tab-pane fade" id="tab3" role="tabpanel">
+	  					<div class="form">
+	  					<form class="form">
+	  						<div class="form-group">
+	  			      <input type="text" class="form-control  border border-right-0 border-top-0   " placeholder="card number*">
+	  			      
+	  						</div>
+	  						<div class="form-group">
+	  							<input type="text" class="form-control" placeholder="name of holder">
+	  						</div>
+	  						<div class="form-group">
+	  							<input  type="date"> <input type="text" placeholder="cvv">
+	  						</div>
+	  						<div class="form-group form-check">
+	  							<input type="checkbox" class="from-check-input bg-danger">
+	  							<span class="text-success">save this card</span>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>show order details<br>order total</label>
+	  							<p class="float-right text-danger">$2890</p>
+	  						</div>
+	  						<button class=" btn btn-block BG-SUCCESS text-white">CONFORM ORDER</button>
+	  					</form>
+	  				</div>
+	  			</div>
+	  				<div class="tab-pane fade" id="tab4" role="tabpanel">
+	  			 	<div class="form">
+	  					<form class="form">
+	  						<div class="form-group">
+	  			      <input type="text" class="form-control  border border-right-0 border-top-0   " placeholder="card number*">
+	  			      
+	  						</div>
+	  						<div class="form-group">
+	  							<input type="text" class="form-control" placeholder="name of holder">
+	  						</div>
+	  						<div class="form-group">
+	  							<input  type="date"> <input type="text" placeholder="cvv">
+	  						</div>
+	  						<div class="form-group form-check">
+	  							<input type="checkbox" class="from-check-input bg-danger">
+	  							<span class="text-success">save this card</span>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>show order details<br>order total</label>
+	  							<p class="float-right text-danger">$2890</p>
+	  						</div>
+	  						<button class=" btn btn-block BG-SUCCESS text-white">CONFORM ORDER</button>
+	  					</form>
+	  				</div>
+	  			</div>
+	  				<div class="tab-pane fade" id="tab5" role="tabpanel">
+	  					<div class="form">
+	  					<form class="form">
+	  						<div class="form-group">
+	  			      <input type="text" class="form-control  border border-right-0 border-top-0   " placeholder="card number*">
+	  			      
+	  						</div>
+	  						<div class="form-group">
+	  							<input type="text" class="form-control" placeholder="name of holder">
+	  						</div>
+	  						<div class="form-group">
+	  							<input  type="date"> <input type="text" placeholder="cvv">
+	  						</div>
+	  						<div class="form-group form-check">
+	  							<input type="checkbox" class="from-check-input bg-danger">
+	  							<span class="text-success">save this card</span>
+	  						</div>
+	  						<div class="form-group">
+	  							<label>show order details<br>order total</label>
+	  							<p class="float-right text-danger">$2890</p>
+	  						</div>
+	  						<button class=" btn btn-block BG-SUCCESS text-white">CONFORM ORDER</button>
+	  					</form>
+	  				</div>
+	  			</div>
+	  		</div>
+	  			
+	  		</div>
+	  	</div>
+	  </div>
+		</div>
+	</div>
+</div>
+
+
+<!-- Grid row -->
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

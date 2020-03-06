@@ -1,0 +1,136 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>topicBootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+		#loading
+	{
+		width: 100%;
+		height: 100vh;
+		background: #fff url('img/loader.gif')
+			no-repeat center ;
+		position: fixed;
+		z-index: 99;
+		
+	}
+	</style>
+ <body onload="myfun();">
+ <div id="loading">
+
+ </div>
+<nav class="navbar navbar-expand-sm top-fixed navbar-dark bg-dark">
+
+	<a href="homepage.html" class="navbar-brand">limeRoad</a>
+	<button  type="button" class="navbar-toggler"
+	data-target="#menu" data-toggle="collapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="menu">
+	<ul class="navbar-nav">
+		<li class="navbar-item">
+			<a href="#" class="nav-link text-white">home</a>
+		</li>
+		<li class="navbar-item">
+			<a href="#" class="nav-link text-white">contact</a>
+		</li>
+		<li class="navbar-item">
+			<a href="#" class="nav-link text-white">about</a>
+		</li>
+		<li class="navbar-item">
+			<a href="#" class="nav-link text-white">serivices</a>
+		</li>
+	</ul>
+	</div>
+</nav>  
+ 
+
+<div class="section">
+<div class="container">
+
+	<div class="row">
+	 <div class="col-lg-6">
+	  <div class="media">
+	   <img src="img/boy.jpg" width="30%" class="img-fluid">
+	  	<div class="media-body ">
+	  	<button type="button" class="close" data-dismiss="#media" data-target="">&#37;</button>
+	  	<br>
+	  	<div class="price float-right">
+	  		<ul style="list-style: none">
+	  			<li>$1774 <sup><strike>$2499</strike></sup></li>
+	  			<li><small>free shipping</small></li>
+	  			<li><h3 class="badge badge-pil bg-success">offer 100% cashback</h3></li>
+	  		</ul>
+	  	</div>
+	  		<h5 class="media-title mt-0 mr-2 "><b>beige solid surta</b><h6 class="text-muted">by dhoore</h6></h5>
+	  	<ul style="list-style: none">
+  	 	<li><b>size : L</b></li>
+	  	 	<li><b>quntity:&shy; <u>1</u></b></li>
+				</ul>
+	  	</div>
+	  </div>	
+	 </div>
+	 
+	 <div class="col-lg-6">
+	 <div class="bill">
+	 	<h3 class="">summary</h3>
+	 	<dl class="row">
+			
+			<dt class="col-sm-4">price</dt>
+			<dd class="col-sm-8">1774 </dd>
+			
+			<dt class="col-sm-4">shipping charge</dt>
+			<dd class="col-sm-8"><P>FREE</P></dd>
+			
+			<dt class="col-sm-4">Applicable charge</dt>
+			<dd class="col-sm-8"> +$102 </dd>
+			
+			<dt class="col-sm-4"><p class="text-danger">Amount</p></dt>
+			<dd class="col-sm-8"><P class="text-danger"><b>$1878</b></P></dd>
+			
+		</dl>
+	<a href="bill.html" class="btn btn-link btn-danger Btn-block">
+	<h6 class="text-white">CHEKOUT</h6></a>
+	 </div>
+	</div>
+</div>
+	 </div>
+	 </div>
+	 
+	 
+
+
+<!-- Grid row -->
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  	
+  	<script>
+	var preloader = document.getElementById("loading");
+		function myfun()
+		{
+		preloader.style.display= "none";
+		}
+		
+	</script>
+</body>
+
+</html>

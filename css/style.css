@@ -1,0 +1,21 @@
+img.card-img-top.border {
+    height: 114px;
+    width: 117px;
+    margin-left: 90px;
+    margin-top: 26px;
+}
+p {
+    line-height: 2;
+    margin: 11px;
+    margin-top: 10px;
+   
+}
+li {
+    line-height: 2;
+}
+.card.border.border-primary.text-white {
+    background-color: #009688;
+}
+.card-body {
+    background-color: #072150;
+}
